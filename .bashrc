@@ -134,12 +134,6 @@ if [[ $- =~ .*i.* ]]; then bind '"\C-r": "\C-a hstr -- \C-j"'; fi
 # if this is interactive shell, then bind 'kill last command' to Ctrl-x k
 if [[ $- =~ .*i.* ]]; then bind '"\C-xk": "\C-a hstr -k \C-j"'; fi
 
-NORMAL="\[\033[00m\]"
-BLUE="\[\033[01;34m\]"
-YELLOW="\[\e[1;33m\]"
-GREEN="\[\e[1;32m\]"
-
-source $HOME/bin/kube-ps1/kube-ps1.sh
-PS1="\n${YELLOW}\u${NORMAL}@${BLUE}\h${NORMAL} in ${GREEN}\w ${NORMAL}"'$(kube_ps1)'" [\$(date +%H:%M:%S)]\n\$ "
-#source ~/bin/kube-prompt.sh
-#export PS1="${BLUE}\W ${GREEN}\u${YELLOW} $(__kube_ps1)${NORMAL} \$ "
+########################################################################
+# Set up PS1
+source $HOME/bin/dotfile/prompt.sh

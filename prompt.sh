@@ -1,6 +1,4 @@
-if [ -f "$HOME/bin/kube-ps1/kube-ps1.sh" ]; then
-  echo "kube-ps1.sh exists"
-else
+if [ ! -f "$HOME/bin/kube-ps1/kube-ps1.sh" ]; then
   mkdir $HOME/bin
   git clone  https://github.com/jonmosco/kube-ps1 $HOME/bin/kube-ps1
 fi

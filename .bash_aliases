@@ -1,5 +1,4 @@
 export JAVA_HOME=/usr/lib/jvm/java-11/openjdk-amd64
-export PATH=$PATH:$HOME/istio-1.7.4/bin
 export PATH=$PATH:$HOME/.krew/bin
 
 alias k="kubectl"
