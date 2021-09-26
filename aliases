@@ -2,7 +2,8 @@ export JAVA_HOME=/usr/lib/jvm/java-11/openjdk-amd64
 export PATH=$PATH:$HOME/.krew/bin
 
 alias k="kubectl"
-alias kg="kubectl get"
+alias kg="kubectl get -o wide -A"
+alias kgp="kubectl get -o wide -A pod"
 alias kes="kubectl port-forward -n elasticsearch-oss svc/catalog-es-oss-master 9200:9200"
 
 alias clhu="kubectl config use-context clhuaks"

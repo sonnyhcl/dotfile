@@ -137,3 +137,7 @@ if [[ $- =~ .*i.* ]]; then bind '"\C-xk": "\C-a hstr -k \C-j"'; fi
 ########################################################################
 # Set up PS1
 source $HOME/bin/dotfile/prompt.sh
+
+# Set up alias
+source $HOME/bin/dotfile/aliases
+
