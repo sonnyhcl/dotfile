@@ -65,7 +65,7 @@ endif
 set number
 set numberwidth=5
 "" Color Scheme
-colorscheme molokai
+colorscheme monokai
 "" Enable mouse in VIM
 set mouse=a
 set selection=exclusive
