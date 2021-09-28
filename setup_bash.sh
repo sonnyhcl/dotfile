@@ -13,7 +13,7 @@ cp bash_profile $HOME/.bash_profile
 source $HOME/.bashrc
 
 ## Copy vimrc related
-if [ ! -f "$HOME/.vim/colors/monakai.vim" ]; then
+if [ ! -f "$HOME/.vim/colors/monokai.vim" ]; then
   mkdir -p $HOME/.vim/colors
   curl -L https://github.com/sickill/vim-monokai/raw/master/colors/monokai.vim -o $HOME/.vim/colors/monokai.vim
 fi 
