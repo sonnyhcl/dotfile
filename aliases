@@ -1,5 +1,5 @@
-export JAVA_HOME=/usr/lib/jvm/java-11/openjdk-amd64
-export PATH=$PATH:$HOME/.krew/bin
+export JAVA_HOME=/usr/lib/jvm/default-java/
+export PATH=$PATH:$HOME/.krew/bin:$HOME/bin/istioctl/bin
 
 alias k="kubectl"
 alias kg="kubectl get -o wide -A"
@@ -9,7 +9,7 @@ alias kprometheus="k port-forward svc/prometheus -n istio-system 9090:9090"
 alias kgrafana="k port-forward svc/grafana -n istio-system 3000:3000"
 
 alias clhu="kubectl config use-context clhuaks"
-alias onebox="kubectl config use-context babylonscus"
+alias onebox="kubectl config use-context babylononebox"
 alias devint="kubectl config use-context babylondevint"
 alias dogfood="kubectl config use-context babylondf"
 alias perf="kubectl config use-context catalogrollingcus"
