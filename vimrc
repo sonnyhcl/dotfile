@@ -67,9 +67,9 @@ set numberwidth=5
 "" Color Scheme
 colorscheme monokai
 "" Enable mouse in VIM
-set mouse=a
-set selection=exclusive
-set selectmode=mouse,key
+""set mouse=a
+""set selection=exclusive
+""set selectmode=mouse,key
 "" No error bells
 set noerrorbells
 "" Show match () {}

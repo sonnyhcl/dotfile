@@ -141,3 +141,5 @@ source $HOME/bin/dotfile/prompt.sh
 # Set up alias
 source $HOME/bin/dotfile/aliases
 
+# Set up krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
