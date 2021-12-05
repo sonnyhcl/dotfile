@@ -143,3 +143,7 @@ source $HOME/bin/dotfile/aliases
 
 # Set up krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+export do="--dry-run=client -o yaml"    # k get pod x $do
+
+export now="--force --grace-period 0"   # k delete pod x $now

@@ -74,3 +74,7 @@ colorscheme monokai
 set noerrorbells
 "" Show match () {}
 set showmatch
+"" CKAD helper
+set tabstop=2
+set expandtab
+set shiftwidth=2
