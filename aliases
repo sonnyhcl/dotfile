@@ -10,3 +10,8 @@ alias kprometheus="k port-forward svc/prometheus -n istio-system 9090:9090"
 alias kgrafana="k port-forward svc/grafana -n istio-system 3000:3000"
 alias ctx="k config use-context"
 
+function ns() {
+  k get ns;
+  k config set-context --current --namespace=$1;
+  echo "changed to namespace $1"
+}
