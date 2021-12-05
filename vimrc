@@ -62,7 +62,7 @@ endif
 
 " Below are customize vimrc config
 "" Show line number
-set number
+set nonumber
 set numberwidth=5
 "" Color Scheme
 colorscheme monokai
@@ -74,7 +74,7 @@ colorscheme monokai
 set noerrorbells
 "" Show match () {}
 set showmatch
-"" CKAD helper
+"" CKAD tips
 set tabstop=2
 set expandtab
 set shiftwidth=2
