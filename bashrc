@@ -141,10 +141,14 @@ source $HOME/bin/dotfile/prompt.sh
 # Set up alias
 source $HOME/bin/dotfile/aliases
 
+# Set up k9s
+source $HOME/bin/k9s/setup.sh
+
 # Set up krew
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$HOME/.local/bin:$PATH"
 
 # CKAD tips
 export o="-o yaml"
 export do="--dry-run=client -o yaml"    # k get pod x $do
 export now="--force --grace-period 0"   # k delete pod x $now
+

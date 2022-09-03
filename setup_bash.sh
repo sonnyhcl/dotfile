@@ -19,3 +19,7 @@ if [ ! -f "$HOME/.vim/colors/monokai.vim" ]; then
 fi 
 cp vimrc $HOME/.vimrc
 
+## Copy k9s related
+mkdir -p $HOME/bin
+cp -r k9s $HOME/bin
+
