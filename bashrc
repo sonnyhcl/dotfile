@@ -152,3 +152,6 @@ export o="-o yaml"
 export do="--dry-run=client -o yaml"    # k get pod x $do
 export now="--force --grace-period 0"   # k delete pod x $now
 
+# kubecolor
+command -v kubecolor >/dev/null 2>&1 && alias kubectl="kubecolor"
+
