@@ -153,5 +153,9 @@ export do="--dry-run=client -o yaml"    # k get pod x $do
 export now="--force --grace-period 0"   # k delete pod x $now
 
 # kubecolor
+source $HOME/bin/kubecolor/setup.sh
 command -v kubecolor >/dev/null 2>&1 && alias kubectl="kubecolor"
-
+# autocomplete for kubecolor
+source <(kubectl completion bash)
+complete -o default -F __start_kubectl kubecolor
+complete -o default -F __start_kubectl k
