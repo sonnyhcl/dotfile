@@ -1,5 +1,5 @@
 export JAVA_HOME=/usr/lib/jvm/default-java/
-export PATH=$PATH:$HOME/.krew/bin:$HOME/bin/istioctl/bin
+export PATH=$PATH:$HOME/.krew/bin:$HOME/.istioctl/bin
 
 command -v kubecolor >/dev/null 2>&1 && alias kubectl="kubecolor"
 alias k="kubectl"
